@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        header, main, footer {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Form Example</h1>
+    <p>This page demonstrates an accessible, well-structured HTML5 form with tables, lists, and media.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Features Overview</h2>
+        <ul>
+            <li>Well-structured content with lists, tables, and media</li>
+            <li>HTML5 form with multiple input types</li>
+            <li>Form attributes like <code>placeholder</code>, <code>required</code>, <code>autocomplete</code>, and <code>readonly</code></li>
+            <li>Built-in HTML5 validation</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Example Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Benefit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML5 Validation</td>
+                    <td>Ensures user input meets requirements before submission</td>
+                </tr>
+                <tr>
+                    <td>Responsive Design</td>
+                    <td>Works on all devices and screen sizes</td>
+                </tr>
+                <tr>
+                    <td>Accessibility</td>
+                    <td>Improves usability for everyone, including screen reader users</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Embedded Media</h2>
+        <img src="https://via.placeholder.com/800x200.png?text=Sample+Banner" alt="Sample banner">
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            </div>
+            
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+            </div>
+            
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" pattern="^\+?\d[\d\s]{7,}$" required>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">--Select Gender--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Skills:</label>
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="skills" value="JavaScript">
+                <label for="js">JavaScript</label>
+            </div>
+
+            <div>
+                <label for="experience">Years of Experience (readonly example):</label>
+                <input type="number" id="experience" name="experience" value="2" readonly>
+            </div>
+
+            <div>
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" placeholder="Tell us a little about yourself..." required></textarea>
+            </div>
+
+            <div>
+                <label for="resume">Upload Resume (PDF only):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" required>
+            </div>
+
+            <div>
+                <label>Preferred Contact Method:</label>
+                <input type="radio" id="contact-email" name="contact_method" value="Email" required>
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-phone" name="contact_method" value="Phone">
+                <label for="contact-phone">Phone</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced Form Example. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
